@@ -1,4 +1,16 @@
-<?php 
+<?php
+
+/* style.cssの読み込みフォルダをscss内部に変更
+-------------------------------------------------------------------*/
+function register_style() {
+  wp_register_style('style', get_template_directory_uri().'/scss/style.css');
+}
+
+function add_stylesheet() {
+  register_style();
+  wp_enqueue_style('style');
+}
+add_action('wp_print_styles', 'add_stylesheet');
 
 /* body classへpage-slugクラスも追加
 -------------------------------------------------------------------*/
@@ -117,7 +129,7 @@ add_action( 'template_redirect', 'custom_handle_404' );
 -------------------------------------------------------------------*/
 if(!function_exists('insert_noindex')) {
   function insert_noindex() {
-    if( 
+    if(
       is_search() || is_404()
     ):?>
 <meta name="robots" content="noindex,follow"/>

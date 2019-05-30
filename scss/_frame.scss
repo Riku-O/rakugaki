@@ -1,0 +1,24 @@
+/* Layout
+-----------------------------------------*/
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 18px 0;
+  max-width: 600px;
+}
+
+.main {
+
+}
+
+.sidebar {
+
+}
+
+/* Frame @articles
+-----------------------------------------*/
+.articles {
+  &-side {
+    margin: 32px 0;
+  }
+}

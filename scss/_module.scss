@@ -754,6 +754,8 @@
 
   span.marker {
     background: linear-gradient(transparent 80%,#f8e81c 0);
+    line-height: 1.5;
+    font-size: 17px;
   }
 
   img {
@@ -794,6 +796,12 @@
     background-color: #f8f8f8;
     margin: 30px 20px 30px 20px;
     font-size: 14px;
+    line-height: 1.2;
+    p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.2;
+    }
   }
 
   .box2 {
@@ -802,6 +810,10 @@
     margin: 30px 12px;
     padding: 20px;
     position: relative;
+    p {
+      margin: 0;
+      font-size: 15px;
+    }
     &::before {
       background-color: #fff;
       color: #da4033;
@@ -820,6 +832,10 @@
     margin: 30px 18px 30px 18px;
     padding: 16px;
     font-size: 15px;
+    p {
+      margin: 0;
+      font-size: 15px;
+    }
   }
 
   /*--------------------
@@ -887,6 +903,7 @@
 
   .balloon p {
     margin: 0 0 20px;
+    font-size: 15px;
     &:last-child {
       margin-bottom: 0;
     }

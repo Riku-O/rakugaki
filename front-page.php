@@ -15,16 +15,17 @@
             }
           }
           ?>
-
-          <?php
-          $args = array( 
-            'posts_per_page' => 1
+		  
+		  <?php
+          $args = array(
+            'post_type' => 'post',
+            'posts_per_page' => 1,
           );
           $the_query = new WP_Query($args); if($the_query->have_posts()):
           ?>
 
           <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
-              
+
           <article class="front__fv-article swiper-slide" style="background: url(<?php echo get_thumbnail(); ?>); background-size: cover; height: 210px;">
             <a href="<?php the_permalink(); ?>" class="front__fv-article-link">
               <h2 class="front__fv-article-ttl"><?php echo str_clean(get_the_title(), 32); ?></h2>
@@ -43,7 +44,7 @@
             'post_type' => 'post',
             'post_status' => 'publish',
             'posts_per_page' => 4,
-            'orderby' => array( 'favrite' => 'ASC'),
+            'orderby' => array( 'favorite' => 'ASC'),
             'meta_query' => array(
               'relation' => 'AND',
               'ranking'=>array(

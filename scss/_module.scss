@@ -870,7 +870,11 @@
   }
 
   span.marker {
+<<<<<<< HEAD
     background: linear-gradient(transparent 80%, #f8e81c 0);
+=======
+    background: linear-gradient(transparent 80%,#f8e81c 0);
+>>>>>>> 76d4dd1ef417725d46676fcf5d19e4c0ccdcac6a
     line-height: 1.5;
     font-size: 17px;
   }
@@ -921,7 +925,10 @@
     margin: 30px 20px 30px 20px;
     font-size: 14px;
     line-height: 1.2;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 76d4dd1ef417725d46676fcf5d19e4c0ccdcac6a
     p {
       margin: 0;
       font-size: 14px;
@@ -935,12 +942,18 @@
     margin: 30px 12px;
     padding: 20px;
     position: relative;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 76d4dd1ef417725d46676fcf5d19e4c0ccdcac6a
     p {
       margin: 0;
       font-size: 15px;
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 76d4dd1ef417725d46676fcf5d19e4c0ccdcac6a
     &::before {
       background-color: #fff;
       color: #da4033;
@@ -959,7 +972,10 @@
     margin: 30px 18px 30px 18px;
     padding: 16px;
     font-size: 15px;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 76d4dd1ef417725d46676fcf5d19e4c0ccdcac6a
     p {
       margin: 0;
       font-size: 15px;
@@ -1037,7 +1053,10 @@
   .balloon p {
     margin: 0 0 20px;
     font-size: 15px;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 76d4dd1ef417725d46676fcf5d19e4c0ccdcac6a
     &:last-child {
       margin-bottom: 0;
     }
